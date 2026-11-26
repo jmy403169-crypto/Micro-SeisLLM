@@ -7,6 +7,12 @@ Repository: https://github.com/jmy403169-crypto/Micro-SeisLLM
 
 The package wraps three monitoring tasks around the same waveform encoder idea: a multi-scale CNN embedder, latent patching into tokens, the first few layers of **Qwen3-4B** or **GPT-2** with **LoRA** (`r=16`), and a task head. Base LLM weights are not in this git tree; download them locally (see below).
 
+## Architecture
+
+![Overview of the Micro-SeisLLM architecture](docs/figures/microseisllm_architecture.png)
+
+**Overview of Micro-SeisLLM.** Multi-component waveforms are transformed by a multi-scale convolutional embedder and latent patching module. The resulting tokens are processed using a truncated language-model backbone with LoRA adaptation, followed by task-specific heads for noise suppression, first-arrival picking, and source localization.
+
 ## Three tasks
 
 | Task | Model factory | Typical input |
