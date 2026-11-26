@@ -1,0 +1,159 @@
+{
+  "sampling_rate_hz": 500,
+  "layout": "(n_stations, n_samples, 3)",
+  "source_coords": "local cartesian-like units from catalogue (lat/lon/depth columns)",
+  "stations_file": "stations.csv",
+  "velocity_model_file": "velocity_model.json",
+  "events": [
+    {
+      "event_id": "2",
+      "file": "event_0002.npz",
+      "true_source": [
+        200.0,
+        0.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "15",
+      "file": "event_0015.npz",
+      "true_source": [
+        600.0,
+        200.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "28",
+      "file": "event_0028.npz",
+      "true_source": [
+        1000.0,
+        400.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "32",
+      "file": "event_0032.npz",
+      "true_source": [
+        1800.0,
+        400.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "46",
+      "file": "event_0046.npz",
+      "true_source": [
+        200.0,
+        800.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "56",
+      "file": "event_0056.npz",
+      "true_source": [
+        0.0,
+        1000.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "78",
+      "file": "event_0078.npz",
+      "true_source": [
+        0.0,
+        1400.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "104",
+      "file": "event_0104.npz",
+      "true_source": [
+        800.0,
+        1800.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "109",
+      "file": "event_0109.npz",
+      "true_source": [
+        1800.0,
+        1800.0,
+        190.0,
+        2.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    },
+    {
+      "event_id": "142",
+      "file": "event_0142.npz",
+      "true_source": [
+        1800.0,
+        200.0,
+        590.0,
+        4.0
+      ],
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ]
+    }
+  ]
+}

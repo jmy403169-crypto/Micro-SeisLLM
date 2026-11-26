@@ -1,0 +1,107 @@
+{
+  "sampling_rate_hz": 500,
+  "layout": "(n_stations, n_samples, 3) ENZ",
+  "unit": "normalized amplitude",
+  "events": [
+    {
+      "event_id": "2",
+      "file": "event_0002.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "15",
+      "file": "event_0015.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "28",
+      "file": "event_0028.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "32",
+      "file": "event_0032.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "46",
+      "file": "event_0046.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "56",
+      "file": "event_0056.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "78",
+      "file": "event_0078.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "104",
+      "file": "event_0104.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "109",
+      "file": "event_0109.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    },
+    {
+      "event_id": "142",
+      "file": "event_0142.npz",
+      "shape_nsta_t_c": [
+        16,
+        4000,
+        3
+      ],
+      "sampling_rate_hz": 500
+    }
+  ]
+}

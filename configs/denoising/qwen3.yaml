@@ -1,0 +1,40 @@
+task: denoising
+# Paper main path: event-level multi-station denoising (SeisMoLLM_denoise_event)
+model_name: SeisMoLLM_denoise_event
+backbone: Qwen3
+llm: Qwen3
+num_transformer_layers: 3
+LLM_start_layer: 0
+patch_size: 8
+d_model: 2560
+embedding_dim: 2560
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.1
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+pretrain: false
+freeze: true
+learning_rate: 1.0e-4
+batch_size: 1
+max_epochs: 50
+random_seed: 0
+early_stopping:
+  patience: 10
+  monitor: val_loss
+  mode: min
+window_length: 4000
+sampling_rate_hz: 500
+snr_db_min: -25
+snr_db_max: -8
+loss: mse
+data:
+  data_dir: data/sample/denoising
+  split_file: data/splits/denoising_split.json
+  train_split: train
+  val_split: validation
+  test_split: test
+  # false = keep (N,3,T) for SeisMoLLM_denoise_event; true = single-station smoke path
+  flatten_stations: false
+checkpoint_dir: checkpoints/lora_adapters/denoising
+results_dir: results/sample_outputs
+llm_path: ${MICROSEISLLM_QWEN3_PATH}

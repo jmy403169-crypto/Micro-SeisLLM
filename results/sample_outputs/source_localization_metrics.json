@@ -1,0 +1,16 @@
+{
+  "task": "source_localization",
+  "backbone": "GPT2",
+  "n": 2,
+  "mae_lat": 1799.9621020704508,
+  "mae_lon": 1000.0676084384322,
+  "mae_depth": 390.44166730344296,
+  "mae_hypocenter_m": 2228.792183836771,
+  "mae_hypocenter_km": 2.228792183836771,
+  "rmse_lat": 1799.962102070457,
+  "rmse_lon": 1280.6775026752148,
+  "rmse_depth": 438.685158374845,
+  "rmse_hypocenter_m": 2252.208494550779,
+  "rmse_hypocenter_km": 2.252208494550779,
+  "note": "Smoke metrics on data/sample only. Paper numbers are in ../expected_metrics.json."
+}

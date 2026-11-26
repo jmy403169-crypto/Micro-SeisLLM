@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microseisllm"
+version = "0.1.0"
+description = "Micro-SeisLLM: LLM-based microseismic denoising, phase picking, and source localization"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "jmy403169-crypto", email = "jmy403169@gmail.com" },
+]
+urls = { Homepage = "https://github.com/jmy403169-crypto/Micro-SeisLLM", Repository = "https://github.com/jmy403169-crypto/Micro-SeisLLM" }
+dependencies = [
+  "torch>=2.1",
+  "transformers>=4.40",
+  "peft>=0.10",
+  "einops",
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "pandas",
+  "pyyaml",
+  "tqdm",
+  "matplotlib",
+  "h5py",
+  "safetensors",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

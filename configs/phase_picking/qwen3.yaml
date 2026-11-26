@@ -1,0 +1,36 @@
+task: phase_picking
+backbone: Qwen3
+llm: Qwen3
+num_transformer_layers: 3
+LLM_start_layer: 0
+patch_size: 8
+d_model: 2560
+embedding_dim: 2560
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.1
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+pretrain: false
+freeze: true
+learning_rate: 1.0e-4
+batch_size: 4
+max_epochs: 50
+random_seed: 0
+early_stopping:
+  patience: 10
+  monitor: val_loss
+  mode: min
+window_length: 4000
+sampling_rate_hz: 500
+label_sigma: 10.0
+loss: weighted_bce
+loss_weight: [0.2, 1.0, 1.0]
+data:
+  data_dir: data/sample/phase_picking
+  split_file: data/splits/phase_picking_split.json
+  train_split: train
+  val_split: validation
+  test_split: test
+checkpoint_dir: checkpoints/lora_adapters/phase_picking
+results_dir: results/sample_outputs
+llm_path: ${MICROSEISLLM_QWEN3_PATH}

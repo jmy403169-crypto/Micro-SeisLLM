@@ -1,0 +1,39 @@
+task: denoising
+# Paper main path: event-level multi-station denoising (SeisMoLLM_denoise_event)
+model_name: SeisMoLLM_denoise_event
+backbone: GPT2
+llm: GPT2
+num_transformer_layers: 3
+LLM_start_layer: 0
+patch_size: 8
+d_model: 768
+embedding_dim: 768
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.1
+lora_target_modules: all-linear
+pretrain: false
+freeze: true
+learning_rate: 1.0e-4
+batch_size: 2
+max_epochs: 50
+random_seed: 0
+early_stopping:
+  patience: 10
+  monitor: val_loss
+  mode: min
+window_length: 4000
+sampling_rate_hz: 500
+snr_db_min: -25
+snr_db_max: -8
+loss: mse
+data:
+  data_dir: data/sample/denoising
+  split_file: data/splits/denoising_split.json
+  train_split: train
+  val_split: validation
+  test_split: test
+  flatten_stations: false
+checkpoint_dir: checkpoints/lora_adapters/denoising
+results_dir: results/sample_outputs
+llm_path: ${MICROSEISLLM_GPT2_PATH}

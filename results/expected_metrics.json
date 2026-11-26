@@ -1,0 +1,58 @@
+{
+  "description": "Reference metrics from the paper experiments on the full evaluation sets. Values were read from the corresponding test logs / eval CSVs. Allowed absolute error is for numerical reproduction with the released checkpoints and the same split; tiny sample smoke runs are not expected to match these numbers.",
+  "source": {
+    "denoising_synthetic": "logs SeisMoLLM_*_denoise_event_simudata test summary lines",
+    "denoising_field": "logs SeisMoLLM_*_denoise_event_microdata test summary lines",
+    "phase_picking_synthetic": "test_csv best ppk_mae on Simudata (500 Hz)",
+    "source_localization_synthetic": "test_csv best loc4_mae on Simudata",
+    "source_localization_field": "test_csv best loc4_mae on field microdata"
+  },
+  "tolerance": {
+    "delta_snr_db_abs": 0.3,
+    "cc_abs": 0.02,
+    "picking_mae_ms_abs": 5.0,
+    "picking_f1_abs": 0.02,
+    "loc_mae_m_abs": 2.0
+  },
+  "denoising": {
+    "synthetic": {
+      "qwen3": { "delta_snr_db": 28.12, "cc": 0.935 },
+      "gpt2": { "delta_snr_db": 28.29, "cc": 0.939 }
+    },
+    "field": {
+      "qwen3": { "delta_snr_db": 8.69, "cc": 0.742 },
+      "gpt2": { "delta_snr_db": 9.38, "cc": 0.770 },
+      "note": "Field waveforms are not shipped; numbers are for paper tables only."
+    }
+  },
+  "phase_picking": {
+    "synthetic": {
+      "qwen3": {
+        "ppk_mae_samples": 67.90,
+        "ppk_mae_ms": 135.8,
+        "spk_mae_samples": 73.00,
+        "spk_mae_ms": 146.0,
+        "ppk_f1": 0.971,
+        "spk_f1": 0.958,
+        "sampling_rate_hz": 500
+      },
+      "gpt2": {
+        "ppk_mae_samples": 71.68,
+        "ppk_mae_ms": 143.4,
+        "ppk_f1": 0.966,
+        "sampling_rate_hz": 500
+      }
+    }
+  },
+  "source_localization": {
+    "synthetic": {
+      "qwen3": { "loc4_mae_m": 25.77 },
+      "gpt2": { "loc4_mae_m": 14.73 }
+    },
+    "field": {
+      "qwen3": { "loc4_mae_m": 30.56 },
+      "gpt2": { "loc4_mae_m": 33.31 },
+      "note": "Field data not redistributed."
+    }
+  }
+}

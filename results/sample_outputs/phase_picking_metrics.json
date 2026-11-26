@@ -1,0 +1,8 @@
+{
+  "task": "phase_picking",
+  "backbone": "GPT2",
+  "n": 2,
+  "p_mae_samples": 2096.0,
+  "p_mae_ms": 4192.0,
+  "note": "Smoke metrics on data/sample only. Paper numbers are in ../expected_metrics.json."
+}

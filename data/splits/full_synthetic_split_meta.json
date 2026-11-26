@@ -1,0 +1,33 @@
+{
+  "full_synthetic_split": {
+    "seed": 0,
+    "n_total": 1005,
+    "n_train": 905,
+    "n_test": 100,
+    "test_ratio": 0.1,
+    "source": "Simudata",
+    "test_event_ids_head": [
+      "2",
+      "15",
+      "28",
+      "32",
+      "46",
+      "56",
+      "78",
+      "104",
+      "109",
+      "142",
+      "143",
+      "176",
+      "197",
+      "203",
+      "231",
+      "232",
+      "237",
+      "240",
+      "248",
+      "252"
+    ],
+    "note": "Full field data not public; full synthetic corpus split follows this seed/rule. Sample folder uses a tiny subset for CI/demo."
+  }
+}

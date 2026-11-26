@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization"
+authors:
+  - name: "jmy403169-crypto"
+    email: "jmy403169@gmail.com"
+version: "0.1.0"
+date-released: "2026-11-26"
+license: Apache-2.0
+repository-code: "https://github.com/jmy403169-crypto/Micro-SeisLLM"
+contact:
+  - email: "jmy403169@gmail.com"
+preferred-citation:
+  type: article
+  authors:
+    - name: "jmy403169-crypto"
+  title: "Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization"
+  journal: "Computers and Geosciences"
+  year: 2026

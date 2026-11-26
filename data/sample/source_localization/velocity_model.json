@@ -1,0 +1,7 @@
+{
+  "type": "homogeneous",
+  "vp_m_s": 4500.0,
+  "vs_m_s": 2600.0,
+  "units": "metres and seconds",
+  "note": "Illustrative synthetic velocity model for workflow demo"
+}

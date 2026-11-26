@@ -1,0 +1,8 @@
+{
+  "task": "denoising",
+  "model_name": "SeisMoLLM_denoise_event",
+  "backbone": "GPT2",
+  "n": 2,
+  "snr_improvement_db_mean": -1.5189443637291493,
+  "note": "Smoke metrics on data/sample only. Paper numbers are in ../expected_metrics.json."
+}

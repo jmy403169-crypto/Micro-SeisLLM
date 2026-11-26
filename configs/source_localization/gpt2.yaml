@@ -1,0 +1,36 @@
+task: source_localization
+backbone: GPT2
+llm: GPT2
+num_transformer_layers: 3
+LLM_start_layer: 0
+patch_size: 8
+d_model: 768
+embedding_dim: 768
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.1
+lora_target_modules: all-linear
+pretrain: false
+freeze: true
+learning_rate: 1.0e-4
+batch_size: 4
+max_epochs: 50
+random_seed: 0
+early_stopping:
+  patience: 10
+  monitor: val_loss
+  mode: min
+window_length: 4000
+sampling_rate_hz: 500
+in_channels: 3
+loss: huber
+huber_delta: 1.0
+data:
+  data_dir: data/sample/source_localization
+  split_file: data/splits/source_localization_split.json
+  train_split: train
+  val_split: validation
+  test_split: test
+checkpoint_dir: checkpoints/lora_adapters/source_localization
+results_dir: results/sample_outputs
+llm_path: ${MICROSEISLLM_GPT2_PATH}
