@@ -1,19 +1,47 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization"
-authors:
-  - name: "jmy403169-crypto"
-    email: "jmy403169@gmail.com"
+type: software
 version: "0.1.0"
 date-released: "2026-11-26"
 license: Apache-2.0
 repository-code: "https://github.com/jmy403169-crypto/Micro-SeisLLM"
-contact:
-  - email: "jmy403169@gmail.com"
+
+authors:
+  - family-names: "Yang"
+    given-names: "Jiamin"
+
+  - family-names: "Li"
+    given-names: "Meng"
+    email: "meli@xsyu.edu.cn"
+
+  - family-names: "Wang"
+    given-names: "Hua"
+
+  - family-names: "Fang"
+    given-names: "Zhilong"
+
+  - family-names: "Chen"
+    given-names: "Kun"
+
 preferred-citation:
   type: article
-  authors:
-    - name: "jmy403169-crypto"
   title: "Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization"
-  journal: "Computers and Geosciences"
+  authors:
+    - family-names: "Yang"
+      given-names: "Jiamin"
+
+    - family-names: "Li"
+      given-names: "Meng"
+
+    - family-names: "Wang"
+      given-names: "Hua"
+
+    - family-names: "Fang"
+      given-names: "Zhilong"
+
+    - family-names: "Chen"
+      given-names: "Kun"
+
+  journal: "Computers & Geosciences"
   year: 2026

@@ -2,7 +2,7 @@
 
 Code for **Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization** (manuscript aimed at *Computers & Geosciences*).
 
-Contact: `jmy403169@gmail.com`  
+Contact: `meli@xsyu.edu.cn`  
 Repository: https://github.com/jmy403169-crypto/Micro-SeisLLM
 
 The package wraps three monitoring tasks around the same waveform encoder idea: a multi-scale CNN embedder, latent patching into tokens, the first few layers of **Qwen3-4B** or **GPT-2** with **LoRA** (`r=16`), and a task head. Base LLM weights are not in this git tree; download them locally (see below).
