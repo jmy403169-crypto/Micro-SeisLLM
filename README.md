@@ -165,12 +165,13 @@ Tolerances are listed in `expected_metrics.json`. Matching these requires the re
 ## Citation
 
 ```bibtex
-@article{microseisllm2026,
-  title   = {Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization},
-  author  = {jmy403169-crypto},
-  journal = {Computers and Geosciences},
-  year    = {2026},
-  note    = {https://github.com/jmy403169-crypto/Micro-SeisLLM}
+@misc{yang2026microseisllm,
+  title        = {Micro-SeisLLM: LLM-based Microseismic Noise Suppression, Phase Picking, and Source Localization},
+  author       = {Yang, Jiamin and Li, Meng and Wang, Hua and Fang, Zhilong and Chen, Kun},
+  year         = {2026},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/jmy403169-crypto/Micro-SeisLLM},
+  note         = {Software repository accompanying a manuscript prepared for Computers \& Geosciences}
 }
 ```
 
